@@ -1,0 +1,27 @@
+import { ContainerNavbar, EnlacesContainer, Enlance } from "./styles";
+import Menu from "../Menu/Menu";
+import Switch from "../Switch/Switch";
+import { useState } from "react";
+
+const Navbar = () => {
+  /* Usamos un hook para poder mostrar y ocultar el menú */
+  const [visible, setVisible] = useState(false);
+
+  const toogleMenu = () => {
+    setVisible(!visible);
+  };
+  return (
+    <ContainerNavbar>
+      <Menu toogleMenu={toogleMenu} />
+      {visible && (
+        <EnlacesContainer>
+          <Enlance href='#'>Inicio</Enlance>
+          <Enlance href='#'>Sobre mi</Enlance>
+          <Enlance href='#'>Habilidades</Enlance>
+        </EnlacesContainer>
+      )}
+      <Switch />
+    </ContainerNavbar>
+  );
+};
+export default Navbar;
