@@ -6,12 +6,14 @@ export const ContainerNavbar = styled.div`
   width: 100%;
   height: 70px;
   background-color: #2c2c2c;
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 `;
 
 /* Container del menu desplegable */

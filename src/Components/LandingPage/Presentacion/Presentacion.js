@@ -9,7 +9,7 @@ const Presentacion = () => {
         <TextoSpan>Tultitlán, Edo de México - México</TextoSpan>
       </div>
       <Boton>
-        <a href='#'>Empecemos</a>
+        <a href='#aboutme'>Empecemos</a>
       </Boton>
     </DivContainer>
   );

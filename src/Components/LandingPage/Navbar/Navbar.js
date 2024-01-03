@@ -22,9 +22,9 @@ const Navbar = () => {
       <Menu toogleMenu={toogleMenu} />
       {visible && (
         <EnlacesContainer onClick={toogleMenu}>
-          <Enlance href='#'>Inicio</Enlance>
+          <Enlance href='#home'>Inicio</Enlance>
           <Enlance href='#aboutme'>Sobre mi</Enlance>
-          <Enlance href='#'>Habilidades</Enlance>
+          <Enlance href='#skill'>Habilidades</Enlance>
         </EnlacesContainer>
       )}
       <Switch />

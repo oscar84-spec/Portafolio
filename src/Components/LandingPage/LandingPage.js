@@ -4,7 +4,7 @@ import Presentacion from "./Presentacion/Presentacion";
 
 const LandingPage = () => {
   return (
-    <SectionImg>
+    <SectionImg id='home'>
       <CapaOscura>
         <Navbar />
         <Presentacion />
