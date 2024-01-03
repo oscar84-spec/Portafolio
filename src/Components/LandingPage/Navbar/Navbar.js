@@ -9,14 +9,21 @@ const Navbar = () => {
 
   const toogleMenu = () => {
     setVisible(!visible);
+    OcultarMenu();
+  };
+
+  const [ocultar, setOcultar] = useState(true);
+
+  const OcultarMenu = () => {
+    setOcultar(!ocultar);
   };
   return (
     <ContainerNavbar>
       <Menu toogleMenu={toogleMenu} />
       {visible && (
-        <EnlacesContainer>
+        <EnlacesContainer onClick={toogleMenu}>
           <Enlance href='#'>Inicio</Enlance>
-          <Enlance href='#'>Sobre mi</Enlance>
+          <Enlance href='#aboutme'>Sobre mi</Enlance>
           <Enlance href='#'>Habilidades</Enlance>
         </EnlacesContainer>
       )}
