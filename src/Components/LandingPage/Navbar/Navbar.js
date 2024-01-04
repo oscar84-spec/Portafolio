@@ -25,6 +25,7 @@ const Navbar = () => {
           <Enlance href='#home'>Inicio</Enlance>
           <Enlance href='#aboutme'>Sobre mi</Enlance>
           <Enlance href='#skill'>Habilidades</Enlance>
+          <Enlance href='#exp'>Experiencia</Enlance>
         </EnlacesContainer>
       )}
       <Switch />
