@@ -4,6 +4,7 @@ import Aboutme from "./Components/Aboutme/Aboutme";
 import Skills from "./Components/Habilidades/Habilidades";
 import Exp from "./Components/Exp/Exp";
 import Contacto from "./Components/Contacto/Contacto";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Skills />
       <Exp />
       <Contacto />
+      <Footer />
     </>
   );
 }
