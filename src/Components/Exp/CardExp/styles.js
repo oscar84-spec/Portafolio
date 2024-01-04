@@ -15,7 +15,7 @@ export const DivImg = styled.div`
   height: 150px;
   border-bottom: #444444 solid 1px;
   /* background-image: url(${Encrip}); */
-  background-image: url(${(props) => props.img});
+  background-image: url(${(props) => props.$img});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

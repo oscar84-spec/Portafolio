@@ -16,7 +16,7 @@ const CardExperiencie = (props) => {
   console.log(img);
   return (
     <DivCard>
-      <DivImg img={img}></DivImg>
+      <DivImg $img={img}></DivImg>
       <DivElement>
         <div>
           <ExpTexto>Challenge Alura</ExpTexto>
