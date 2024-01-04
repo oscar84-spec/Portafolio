@@ -8,8 +8,8 @@ const Footer = () => {
     <FooterContainer>
       <TextoFooter>
         Desarrollado por: <TextoSpan>Oscar Hernández</TextoSpan>
-        <p>2024 </p>
       </TextoFooter>
+      <TextoFooter>2024 </TextoFooter>
       <Iconos>
         <a href='https://github.com/oscar84-spec'>
           <FaGithub />
