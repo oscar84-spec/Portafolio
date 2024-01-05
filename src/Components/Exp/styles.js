@@ -5,6 +5,8 @@ export const ExpSection = styled.section`
   width: 100%;
   height: max-content;
   box-sizing: border-box;
+  background-color: ${({ theme }) => theme.body};
+  transition: 0.5s all ease-in;
   @media (min-width: 768px) {
     padding: 0 20px;
   }

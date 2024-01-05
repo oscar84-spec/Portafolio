@@ -8,10 +8,9 @@ export const ContainerIcon = styled.div`
   svg {
     width: 35px;
     height: 35px;
-    color: #f1f9f9;
+    color: ${({ theme }) => theme.letraMenu};
   }
   @media (min-width: 1024px) {
-    border: red solid;
     display: none;
   }
 `;
@@ -27,14 +26,14 @@ export const LinkLi = styled.li`
   justify-content: space-evenly;
   font-size: 1.3rem;
   font-family: "Roboto Condensed", sans-serif;
-  color: #f1f9f9;
+  color: ${({ theme }) => theme.letraMenu};
   cursor: pointer;
 `;
 
 export const LinkInterno = styled.a`
   &:hover {
     transition: 0.3s ease-in;
-    color: green;
+    color: ${({ theme }) => theme.hover};
   }
 `;
 
@@ -50,5 +49,5 @@ export const DivMenu = styled.div`
 export const Nombre = styled.h3`
   font-size: 1.3rem;
   font-family: "Roboto Condensed", sans-serif;
-  color: #f1f9f9;
+  color: ${({ theme }) => theme.letraMenu};
 `;

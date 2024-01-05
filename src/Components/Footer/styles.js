@@ -4,14 +4,15 @@ export const FooterContainer = styled.footer`
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
-  margin-top: 100px;
+  padding-top: 100px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: #444444 solid 1px;
+  border-top: ${({ theme }) => theme.border} solid 1px;
+  background-color: ${({ theme }) => theme.body};
   @media (min-width: 768px) {
-    padding: 20px 40px;
+    padding: 100px 40px 20px 40px;
   }
 `;
 
@@ -19,7 +20,7 @@ export const FooterContainer = styled.footer`
 export const TextoFooter = styled.p`
   font-size: 1.2rem;
   font-family: "Roboto Condensed", sans-serif;
-  color: #0e0606;
+  color: ${({ theme }) => theme.letra};
 `;
 
 export const TextoSpan = styled.span`

@@ -4,7 +4,8 @@ import { styled } from "styled-components";
 export const Card = styled.div`
   width: 130px;
   height: 150px;
-  border: #444444 solid 1px;
+  border: ${({ theme }) => theme.border} solid 1px;
+  transition: 0.5s all ease-in;
   border-radius: 20px;
   box-sizing: border-box;
   margin: 10px 0;

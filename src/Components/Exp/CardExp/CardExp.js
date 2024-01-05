@@ -13,7 +13,6 @@ import { BiLinkExternal } from "react-icons/bi";
 
 const CardExperiencie = (props) => {
   const { img, name, demo, rep } = props;
-  console.log(img);
   return (
     <DivCard>
       <DivImg $img={img}></DivImg>

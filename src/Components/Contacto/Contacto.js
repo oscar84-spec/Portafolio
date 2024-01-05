@@ -7,9 +7,10 @@ import {
   Mensaje,
   Submit,
   ContainerSubmit,
+  TituloContacto,
 } from "./styles";
 import { TituloContainer } from "../Habilidades/styles";
-import { TituloBlur, TituloNormal } from "../Aboutme/Sobremi/styles";
+import { TituloBlur } from "../Aboutme/Sobremi/styles";
 /* EmailJS */
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
@@ -41,7 +42,7 @@ const Contacto = () => {
     <ContactoContainer id='contacto'>
       <TituloContainer>
         <TituloBlur>CONTACTO</TituloBlur>
-        <TituloNormal>Contacto</TituloNormal>
+        <TituloContacto>Contacto</TituloContacto>
       </TituloContainer>
       <FormContainer>
         <Form ref={form} onSubmit={sendEmail}>

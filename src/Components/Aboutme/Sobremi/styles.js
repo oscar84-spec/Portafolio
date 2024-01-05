@@ -45,7 +45,8 @@ export const TituloBlur = styled.h1`
 export const TituloNormal = styled.h3`
   font-size: 1.3rem;
   font-family: "Roboto Condensed", sans-serif;
-  color: #0e0606;
+  color: ${({ theme }) => theme.letra};
+  transition: 0.5s all ease-in;
   font-weight: 700;
   position: absolute;
   top: 50%;
@@ -62,6 +63,8 @@ export const Parrafo = styled.p`
   font-family: "Roboto Condensed", sans-serif;
   text-align: justify;
   margin: 10px 0;
+  color: ${({ theme }) => theme.letra};
+  transition: 0.5s all ease-in;
   @media (min-width: 768px) {
     font-size: 1.2rem;
   }

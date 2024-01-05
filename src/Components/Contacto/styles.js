@@ -13,6 +13,7 @@ export const ContactoContainer = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: calc(50%);
+  background-color: ${({ theme }) => theme.body};
 `;
 
 /* Estilos para el contenedor del formulario */
@@ -81,8 +82,22 @@ export const Submit = styled.input`
   width: 100px;
   border-radius: 20px;
   border: none;
-  background-color: #ccc;
+  background-color: ${({ theme }) => theme.boton};
   font-size: 1rem;
   font-family: "Roboto Condensed", sans-serif;
   color: #0e0606;
+`;
+
+export const TituloContacto = styled.h3`
+  font-size: 1.3rem;
+  font-family: "Roboto Condensed", sans-serif;
+  color: "#0e0606";
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media (min-width: 768px) {
+    font-size: 1.7rem;
+  }
 `;

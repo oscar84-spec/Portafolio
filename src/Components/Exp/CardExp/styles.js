@@ -3,7 +3,8 @@ import Encrip from "../../../assets/encrip.png";
 /* Estilos para las tarjetas */
 export const DivCard = styled.div`
   width: 100%;
-  border: #444444 solid 1px;
+  border: ${({ theme }) => theme.border} solid 1px;
+  transition: 0.5s all ease-in;
   box-sizing: border-box;
   border-radius: 20px;
   margin-bottom: 15px;
@@ -45,14 +46,17 @@ export const DivElement = styled.div`
 export const ExpTexto = styled.p`
   font-size: 1rem;
   font-family: "Roboto Condensed", sans-serif;
-  color: rgba(0, 0, 0, 0.5);
+  /* color: rgba(0, 0, 0, 0.5); */
+  color: ${({ theme }) => theme.legend};
+  transition: 0.5s all ease-in;
 `;
 
 export const ProjectName = styled.p`
   font-size: 0.9rem;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
-  color: #0e0606;
+  color: ${({ theme }) => theme.letra};
+  transition: 0.5s all ease-in;
   margin-top: 5px;
 `;
 /* Estilos para el link */
@@ -62,14 +66,16 @@ export const LinkContainer = styled.div`
   display: flex;
   align-items: center;
   svg {
-    color: #0e0606;
+    color: ${({ theme }) => theme.letra};
+    transition: 0.5s all ease-in;
   }
 `;
 
 export const LinkGit = styled.a`
   font-size: 0.9rem;
   font-family: "Roboto Condensed", sans-serif;
-  color: #0e0606;
+  color: ${({ theme }) => theme.letra};
+  transition: 0.5s all ease-in;
 `;
 
 /* Estilos para el Boton */
@@ -82,5 +88,7 @@ export const BtnDemo = styled.button`
   border: none;
   font-size: 1rem;
   font-family: "Roboto Condensed", sans-serif;
-  background-color: #ccc;
+  background-color: ${({ theme }) => theme.boton};
+  transition: 0.5s all ease-in;
+  color: #0e0606;
 `;

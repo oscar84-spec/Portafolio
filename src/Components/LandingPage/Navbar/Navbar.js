@@ -3,7 +3,9 @@ import Menu from "../Menu/Menu";
 import Switch from "../Switch/Switch";
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ theme, setTheme }) => {
+  /* Recibimos el theme desde Langind page */
+
   /* Usamos un hook para poder mostrar y ocultar el menú */
   const [visible, setVisible] = useState(false);
 
@@ -29,7 +31,7 @@ const Navbar = () => {
           <Enlance href='#contacto'>Contacto</Enlance>
         </EnlacesContainer>
       )}
-      <Switch />
+      <Switch theme={theme} setTheme={setTheme} />
     </ContainerNavbar>
   );
 };

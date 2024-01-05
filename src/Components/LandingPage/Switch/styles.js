@@ -30,7 +30,7 @@ export const SwitchSpan = styled.span`
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #ccc;
+  background-color: ${({ theme }) => theme.switchBody};
   transition: 0.4s;
   border-radius: 34px;
 
@@ -43,13 +43,13 @@ export const SwitchSpan = styled.span`
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: ${({ theme }) => theme.switchBoton};
     transition: 0.4s;
     border-radius: 50%;
   }
   /* Cambia de color el contenedor del switch */
   ${SwitchInput}:checked + & {
-    background-color: #2196f3;
+    background-color: ${({ theme }) => theme.switchBody};
     /* Estilos para que al darle click se mueva el boton */
     &::before {
       transform: translateX(26px);

@@ -12,6 +12,8 @@ export const ContainerAboutme = styled.section`
     flex-direction: column;
     align-items: center;
   }
+  background-color: ${({ theme }) => theme.body};
+  transition: 0.5s all ease-in;
 `;
 
 /* Estilos para el contendor de presentacion */

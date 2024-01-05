@@ -18,7 +18,8 @@ export const Github = styled.div`
   svg {
     width: 30px;
     height: 30px;
-    color: #0e0606;
+    color: ${({ theme }) => theme.icono};
+    transition: 0.5s all ease-in;
   }
 `;
 
@@ -29,7 +30,8 @@ export const Linkedin = styled.div`
   svg {
     width: 30px;
     height: 30px;
-    color: #0e0606;
+    color: ${({ theme }) => theme.icono};
+    transition: 0.5s all ease-in;
   }
 `;
 
@@ -40,6 +42,7 @@ export const Twitter = styled.div`
   svg {
     width: 30px;
     height: 30px;
-    color: #0e0606;
+    color: ${({ theme }) => theme.icono};
+    transition: 0.5s all ease-in;
   }
 `;

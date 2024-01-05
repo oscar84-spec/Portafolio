@@ -25,7 +25,7 @@ export const DivContainer = styled.div`
 export const Welcome = styled.h2`
   font-size: 1.5rem;
   font-family: "Roboto Condense", sans-serif;
-  color: #f1f9f9;
+  color: ${({ theme }) => theme.letraMenu};
   @media (min-width: 768px) {
     font-size: 2rem;
   }
@@ -35,7 +35,7 @@ export const Welcome = styled.h2`
 export const Texto = styled.p`
   font-size: 1.3rem;
   font-family: "Roboto Condensed", sans-serif;
-  color: #f1f9f9;
+  color: ${({ theme }) => theme.letraMenu};
   margin-top: 15px;
   @media (min-width: 768px) {
     font-size: 1.5rem;
@@ -46,7 +46,7 @@ export const Texto = styled.p`
 export const TextoSpan = styled.p`
   font-size: 0.8rem;
   font-family: "Roboto Condensed", sans-serif;
-  color: #f1f9f9;
+  color: ${({ theme }) => theme.letraMenu};
   text-align: center;
   @media (min-width: 768px) {
     font-size: 0.9rem;
@@ -59,7 +59,8 @@ export const Boton = styled.button`
   margin-top: 25px;
   height: 35px;
   border-radius: 20px;
-  background-color: lightgreen;
+  background-color: ${({ theme }) => theme.boton};
+  color: "#0e0606";
   border: none;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 0.8rem;

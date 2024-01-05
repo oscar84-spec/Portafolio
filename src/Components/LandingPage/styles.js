@@ -9,6 +9,8 @@ export const SectionImg = styled.section`
   background-position: calc(60%);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: ${({ theme }) => theme.body};
+  transition: 0.5s all ease-in;
 `;
 /*Capa oscura sobre la imagen de fondo  */
 
