@@ -7,6 +7,10 @@ export const DivCard = styled.div`
   box-sizing: border-box;
   border-radius: 20px;
   margin-bottom: 15px;
+  @media (min-width: 768px) {
+    width: 75%;
+    height: 350px;
+  }
 `;
 
 /* Aqui vamos a poner las imagenes */
@@ -21,6 +25,9 @@ export const DivImg = styled.div`
   background-repeat: no-repeat;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  @media (min-width: 768px) {
+    height: 250px;
+  }
 `;
 
 /* Contenedor de los elementos de texto y links */

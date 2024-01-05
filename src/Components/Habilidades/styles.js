@@ -6,6 +6,12 @@ export const SkillSection = styled.section`
   height: 100vh;
   padding: 0 20px;
   box-sizing: border-box;
+  @media (min-width: 768px) {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 /* Estilos para el contendor del titulo */
@@ -25,4 +31,7 @@ export const CardContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 15px;
+  @media (min-width: 768px) {
+    width: 500px;
+  }
 `;

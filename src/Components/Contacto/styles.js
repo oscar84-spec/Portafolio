@@ -22,6 +22,9 @@ export const FormContainer = styled.div`
   padding: 20px;
   height: 420px;
   width: 100%;
+  @media (min-width: 768px) {
+    width: 70%;
+  }
 `;
 
 /* Estilos para el formulario */

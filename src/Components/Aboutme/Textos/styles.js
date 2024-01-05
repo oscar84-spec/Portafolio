@@ -14,6 +14,9 @@ export const TextoTitulo = styled.h2`
   text-align: justify;
   margin: 15px 0;
   font-weight: 700;
+  @media (min-width: 768px) {
+    font-size: 1.6rem;
+  }
 `;
 
 /* Estilos para el texto sobre mi */
@@ -23,4 +26,7 @@ export const TextoSobremi = styled.p`
   color: #0e0606;
   text-align: justify;
   margin: 15px 0;
+  @media (min-width: 768px) {
+    font-size: 1.1rem;
+  }
 `;

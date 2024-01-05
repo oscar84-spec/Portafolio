@@ -38,4 +38,7 @@ export const Enlance = styled.a`
   font-size: 1.2rem;
   font-family: "Roboto Condensed", sans-serif;
   margin: 5px;
+  @media (min-width: 768px) {
+    font-size: 1.3rem;
+  }
 `;

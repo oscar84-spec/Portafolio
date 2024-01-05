@@ -10,6 +10,9 @@ export const FooterContainer = styled.footer`
   flex-direction: column;
   align-items: center;
   border-top: #444444 solid 1px;
+  @media (min-width: 768px) {
+    padding: 20px 40px;
+  }
 `;
 
 /* Estilos para el Titulo del footer */
@@ -32,5 +35,8 @@ export const Iconos = styled.div`
     width: 25px;
     height: 25px;
     color: rgba(0, 0, 0, 0.5);
+  }
+  @media (min-width: 768px) {
+    width: 50%;
   }
 `;

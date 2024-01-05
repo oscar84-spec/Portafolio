@@ -7,6 +7,10 @@ export const ContainerSobremi = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  @media (min-width: 768px) {
+    margin-top: 50px;
+    padding: 0 40px;
+  }
 `;
 
 /* Estilos para el contendor del titulo */
@@ -26,6 +30,9 @@ export const TituloBlur = styled.h1`
   color: rgba(0, 0, 0, 0.2);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   filter: blur(2px);
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+  }
 `;
 
 /* Estilos para el texto que sera visible */
@@ -38,6 +45,9 @@ export const TituloNormal = styled.h3`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @media (min-width: 768px) {
+    font-size: 1.7rem;
+  }
 `;
 
 /* Estilos para el parrafo */
@@ -46,4 +56,7 @@ export const Parrafo = styled.p`
   font-family: "Roboto Condensed", sans-serif;
   text-align: justify;
   margin: 10px 0;
+  @media (min-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;

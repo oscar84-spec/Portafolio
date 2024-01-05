@@ -1,4 +1,9 @@
-import { ContainerAboutme, DivContainer } from "./styles";
+import {
+  ContainerAboutme,
+  DivContainer,
+  TextosDiv,
+  ImgCreative,
+} from "./styles";
 import Foto from "./Foto/Foto";
 import Titulo from "./Textos/Textos";
 import RedesIcons from "./Redes/Redes";
@@ -9,12 +14,13 @@ const Aboutme = () => {
     <ContainerAboutme id='aboutme'>
       <DivContainer>
         <Foto></Foto>
-        <div>
+        <TextosDiv>
           <Titulo></Titulo>
           <RedesIcons></RedesIcons>
-        </div>
+        </TextosDiv>
       </DivContainer>
       <Sobremi></Sobremi>
+      <ImgCreative></ImgCreative>
     </ContainerAboutme>
   );
 };
