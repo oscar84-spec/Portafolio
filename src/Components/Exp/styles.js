@@ -20,4 +20,9 @@ export const CardExp = styled.div`
     flex-direction: column;
     align-items: center;
   }
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 `;

@@ -8,6 +8,10 @@ export const Card = styled.div`
   border-radius: 20px;
   box-sizing: border-box;
   margin: 10px 0;
+  @media (min-width: 1024px) {
+    width: 200px;
+    height: 220px;
+  }
 `;
 
 /* Estilos para el contenedor del titulo */
@@ -43,5 +47,8 @@ export const IconContainer = styled.div`
     width: 60px;
     height: 60px;
     color: ${(props) => (props.color ? props.color : "#444444")};
+  }
+  @media (min-width: 1024px) {
+    margin-top: 40px;
   }
 `;

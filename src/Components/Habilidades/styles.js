@@ -12,6 +12,9 @@ export const SkillSection = styled.section`
     flex-direction: column;
     align-items: center;
   }
+  @media (min-width: 1024px) {
+    padding: 0 150px;
+  }
 `;
 
 /* Estilos para el contendor del titulo */
@@ -33,5 +36,8 @@ export const CardContainer = styled.div`
   margin-top: 15px;
   @media (min-width: 768px) {
     width: 500px;
+  }
+  @media (min-width: 1024px) {
+    width: 700px;
   }
 `;

@@ -25,6 +25,9 @@ export const FormContainer = styled.div`
   @media (min-width: 768px) {
     width: 70%;
   }
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
 `;
 
 /* Estilos para el formulario */

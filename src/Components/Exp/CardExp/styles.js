@@ -11,6 +11,9 @@ export const DivCard = styled.div`
     width: 75%;
     height: 350px;
   }
+  @media (min-width: 1024px) {
+    width: 30%;
+  }
 `;
 
 /* Aqui vamos a poner las imagenes */

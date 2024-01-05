@@ -39,4 +39,7 @@ export const Iconos = styled.div`
   @media (min-width: 768px) {
     width: 50%;
   }
+  @media (min-width: 1024px) {
+    width: 25%;
+  }
 `;

@@ -28,6 +28,12 @@ export const DivContainer = styled.div`
     flex-direction: row-reverse;
     justify-content: space-between;
   }
+  @media (min-width: 1024px) {
+    padding: 0 70px;
+  }
+  @media (min-width: 1440px) {
+    padding: 0 150px;
+  }
 `;
 
 /* Contenedor para los textos */
@@ -37,6 +43,9 @@ export const TextosDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (min-width: 1024px) {
+      width: 680px;
+    }
   }
 `;
 
@@ -52,5 +61,9 @@ export const ImgCreative = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+  @media (min-width: 1024px) {
+    width: 400px;
+    height: 400px;
   }
 `;

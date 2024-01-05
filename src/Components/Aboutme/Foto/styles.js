@@ -13,4 +13,12 @@ export const ContainerFoto = styled.div`
     width: 150px;
     height: 150px;
   }
+  @media (min-width: 1024px) {
+    width: 150px;
+    height: 150px;
+  }
+  @media (min-width: 1440px) {
+    width: 200px;
+    height: 200px;
+  }
 `;

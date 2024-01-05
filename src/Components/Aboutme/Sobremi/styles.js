@@ -11,6 +11,12 @@ export const ContainerSobremi = styled.div`
     margin-top: 50px;
     padding: 0 40px;
   }
+  @media (min-width: 1024px) {
+    padding: 0 70px;
+  }
+  @media (min-width: 1440px) {
+    padding: 0 150px;
+  }
 `;
 
 /* Estilos para el contendor del titulo */
@@ -58,5 +64,8 @@ export const Parrafo = styled.p`
   margin: 10px 0;
   @media (min-width: 768px) {
     font-size: 1.2rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 1.3rem;
   }
 `;

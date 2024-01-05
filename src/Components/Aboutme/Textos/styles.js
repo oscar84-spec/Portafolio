@@ -17,6 +17,9 @@ export const TextoTitulo = styled.h2`
   @media (min-width: 768px) {
     font-size: 1.6rem;
   }
+  @media (min-width: 1024px) {
+    font-size: 2rem;
+  }
 `;
 
 /* Estilos para el texto sobre mi */
@@ -28,5 +31,8 @@ export const TextoSobremi = styled.p`
   margin: 15px 0;
   @media (min-width: 768px) {
     font-size: 1.1rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 1.2rem;
   }
 `;
