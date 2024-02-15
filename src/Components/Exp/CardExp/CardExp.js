@@ -12,13 +12,13 @@ import {
 import { BiLinkExternal } from "react-icons/bi";
 
 const CardExperiencie = (props) => {
-  const { img, name, demo, rep } = props;
+  const { img, name, demo, rep, project } = props;
   return (
     <DivCard>
       <DivImg $img={img}></DivImg>
       <DivElement>
         <div>
-          <ExpTexto>Challenge Alura</ExpTexto>
+          <ExpTexto>{project}</ExpTexto>
           <ProjectName>{name} </ProjectName>
         </div>
         <LinkContainer>

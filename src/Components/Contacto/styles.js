@@ -86,6 +86,7 @@ export const Submit = styled.input`
   font-size: 1rem;
   font-family: "Roboto Condensed", sans-serif;
   color: #0e0606;
+  cursor: pointer;
 `;
 
 export const TituloContacto = styled.h3`
