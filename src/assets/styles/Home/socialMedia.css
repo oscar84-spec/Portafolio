@@ -1,0 +1,18 @@
+.redes {
+  width: 100px;
+  height: 35px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.redes__icon {
+  svg {
+    width: 20px;
+    height: 20px;
+    color: var(--iconRedes);
+  }
+}

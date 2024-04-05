@@ -1,0 +1,55 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.presentation__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 100px;
+}
+.presentation__name {
+  color: var(--textTitle);
+  font: 400 28px var(--fontTitle);
+  text-align: center;
+}
+.presentation__name--accent {
+  color: var(--textTitleAccent);
+}
+.presentation__job {
+  color: var(--textNormal);
+  font: 400 12px var(--fontNormal);
+  text-align: center;
+}
+.moon {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(var(--moonGradient1) 50%, var(--moonGradient2));
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.btn__download {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 35px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--btnDownload);
+  color: var(--textNormal);
+  font: 400 14px var(--fontNormal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

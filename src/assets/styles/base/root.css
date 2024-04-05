@@ -1,0 +1,38 @@
+:root {
+  --bgColor: #1a1f2b;
+  --textTitle: rgba(180, 194, 220, 1);
+  --textTitleAccent: rgba(86, 100, 123, 1);
+  --bgNavbar: rgba(44, 58, 79, 0.5);
+  --iconDropDown: rgba(180, 194, 220, 1);
+  --textNormal: #f1f9f9;
+  --moonGradient1: rgba(26, 31, 43, 0.5);
+  --moonGradient2: rgba(180, 194, 220, 0.5);
+  --btnDownload: rgba(255, 77, 77, 1);
+  --iconRedes: rgba(86, 100, 123, 1);
+  --textSubtitle: rgba(180, 194, 220, 1);
+  --cardSkillIcon: rgba(86, 100, 123, 0.5);
+  --colorHtml: rgba(239, 96, 38, 1);
+  --colorCss: rgba(37, 161, 225, 1);
+  --colorJs: rgba(240, 219, 79, 1);
+  --colorReact: rgba(0, 216, 255, 1);
+  --colorTailwind1: rgba(19, 177, 187, 1);
+  --colorTailwind2: rgba(9, 204, 183, 1);
+  --vsCode: rgba(60, 153, 212, 1);
+  --git: rgba(240, 81, 51, 1);
+  --projectTitle: rgba(86, 100, 123, 1);
+  --projectIcon: rgba(180, 194, 220, 0.3);
+  --bgProjectTag: rgba(86, 100, 123, 0.5);
+  --iconOtherProject: rgba(86, 100, 123, 1);
+  --iconFolder: rgba(180, 194, 220, 1);
+  --bgOtherProjectTag: rgba(86, 100, 123, 0.3);
+  --bgOtherProject1: rgba(44, 58, 79, 0.2);
+  --bgOtherProject2: rgba(255, 77, 77, 0.2);
+  --iconMore: rgba(180, 194, 220, 1);
+  --textFormation: rgba(74, 157, 156, 1);
+  --fontTitle: "Anton";
+  --fontSubtitle: "Antonio";
+  --fontNormal: "Roboto Condensed";
+}
+body {
+  background-color: var(--bgColor);
+}
