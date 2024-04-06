@@ -1,0 +1,44 @@
+.formation__container {
+}
+.progrma {
+  display: flex;
+  gap: 0 10px;
+  margin-top: 20px;
+}
+.formation__iconMore {
+  svg {
+    width: 20px;
+    height: 20px;
+    color: var(--iconMore);
+  }
+}
+.formation__name {
+  font: 400 16px var(--fontNormal);
+  color: var(--textNormal);
+}
+.formation__date {
+  display: none;
+}
+.formaciones {
+  margin: 10px 0 20px 30px;
+}
+.formaciones__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+.formaciones__name {
+  font: 400 14px var(--fontNormal);
+  color: var(--textFormation);
+}
+.btn__cert {
+  width: 100px;
+  outline: none;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 20px;
+  background-color: var(--btnFormation);
+  color: var(--textNormal);
+  font: 400 12px var(--fontNormal);
+}

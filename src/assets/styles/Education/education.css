@@ -1,0 +1,13 @@
+.education {
+  padding: 0 20px;
+  margin-top: 50px;
+}
+.education__title {
+  font: 400 28px var(--fontTitle);
+  color: var(--textTitle);
+  text-align: center;
+}
+.container__formation {
+  display: flex;
+  flex-direction: column;
+}
