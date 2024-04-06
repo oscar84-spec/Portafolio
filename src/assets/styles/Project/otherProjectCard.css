@@ -1,0 +1,65 @@
+.otroProyecto {
+  border-top-right-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    var(--bgOtherProject1) 50%,
+    var(--bgOtherProject2)
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 10px;
+}
+.otroProyecto__iconDropDown {
+  svg {
+    width: 25px;
+    height: 25px;
+    color: var(--iconOtherProject);
+  }
+}
+.otroProyecto__name {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  align-items: center;
+}
+.iconFolder {
+  svg {
+    width: 20px;
+    color: var(--iconFolder);
+    height: 20px;
+    color: var(--iconFolder);
+  }
+}
+.nameProject {
+  font: 400 14px var(--fontNormal);
+  color: var(--textNormal);
+}
+.moreDescription {
+  padding: 5px 10px;
+  background: linear-gradient(
+    90deg,
+    var(--bgOtherProject1) 50%,
+    var(--bgOtherProject2)
+  );
+  border-bottom-right-radius: 10px;
+}
+.moreDescription__links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0 10px;
+}
+.moreDescription__icons {
+  svg {
+    width: 20px;
+    height: 20px;
+    color: var(--iconOtherProject);
+  }
+}
+.moreDescription__description {
+  margin-top: 10px;
+  text-align: justify;
+  font: 400 14px var(--fontNormal);
+  color: var(--textNormal);
+}

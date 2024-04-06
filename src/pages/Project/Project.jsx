@@ -2,6 +2,7 @@
 import "../../assets/styles/Project/project.css";
 /* =================Importando Componentes===================== */
 import CardProject from "./CardProject";
+import OtherProject from "./OtherProject";
 
 const Project = () => {
   const projects = [
@@ -70,6 +71,7 @@ const Project = () => {
           <CardProject key={proyecto.id} proyecto={proyecto} />
         ))}
       </div>
+      <OtherProject/>
     </section>
   );
 };

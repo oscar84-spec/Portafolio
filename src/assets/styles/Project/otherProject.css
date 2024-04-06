@@ -1,0 +1,11 @@
+.other {
+  margin-top: 50px;
+}
+.other__title {
+  font: 400 20px var(--fontSubtitle);
+  color: var(--textSubtitle);
+  text-align: center;
+}
+.other__container {
+  margin-top: 30px;
+}
