@@ -1,0 +1,22 @@
+.about {
+  padding: 0 20px;
+}
+.about__title {
+  font: 400 28px var(--fontTitle);
+  color: var(--textTitle);
+  text-align: center;
+}
+.about__description {
+  color: var(--textNormal);
+  margin-top: 20px;
+  text-align: justify;
+  font: 400 14px var(--fontNormal);
+}
+.skill__container {
+  margin-top: 20px;
+}
+.skill__subtitle {
+  font: 400 20px var(--fontSubtitle);
+  text-align: center;
+  color: var(--textSubtitle);
+}

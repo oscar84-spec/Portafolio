@@ -1,0 +1,25 @@
+.card__container {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: var(--cardSkill);
+}
+.card__icon {
+  height: 120px;
+}
+.icon {
+  svg {
+    width: 100%;
+    height: 85px;
+    color: var(--cardSkillIcon);
+  }
+}
+.card__subtitle {
+  text-align: center;
+  font: 400 16px var(--fontSubtitle);
+  color: var(--textSubtitle);
+}
+.cardTag {
+  display: flex;
+  gap: 5px 10px;
+  flex-wrap: wrap;
+}
