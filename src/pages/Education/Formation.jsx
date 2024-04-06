@@ -31,7 +31,7 @@ const Formation = ({ form }) => {
               <li className='formaciones__name'>{forma.nameForm}</li>
               <a href={forma.link}>
                 <button type='button' className='btn__cert'>
-                  Certificación
+                  Certificado
                 </button>
               </a>
             </div>

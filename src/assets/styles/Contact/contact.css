@@ -1,0 +1,35 @@
+.contact {
+  padding: 0 20px;
+  margin-top: 50px;
+}
+.contact__title {
+  font: 400 28px var(--fontTitle);
+  color: var(--textTitle);
+  text-align: center;
+}
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.contact__icon {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.iconContact {
+  svg {
+    width: 20px;
+    height: 20px;
+    color: var(--iconMore);
+  }
+}
+.nameContact {
+  font: 400 16px var(--fontNormal);
+  color: var(--textNormal);
+}
+.linkContact {
+  font: 400 16px var(--fontNormal);
+  color: var(--textFormation);
+}
