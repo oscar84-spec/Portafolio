@@ -51,19 +51,19 @@ const About = () => {
           color: "#3C99D4",
         },
         {
-          id: 1,
+          id: 2,
           iconTag: <FaFigma />,
           text: "Figma",
           color: "#f1f9f9",
         },
         {
-          id: 1,
+          id: 3,
           iconTag: <FaGitAlt />,
           text: "Git",
           color: "#F05133",
         },
         {
-          id: 1,
+          id: 4,
           iconTag: <FaGithub />,
           text: "Github",
           color: "#f1f9f9",

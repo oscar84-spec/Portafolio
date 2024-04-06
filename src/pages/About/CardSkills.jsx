@@ -4,9 +4,6 @@ import "../../assets/styles/About/cardSkill.css";
 import TagSkill from "./TagSkill";
 const CardSkills = ({ card }) => {
   const { icon, subtitle, tags } = card;
-  tags.map((tag) => {
-    console.log(tag);
-  });
   return (
     <div className='card__container'>
       <div className='card__icon'>

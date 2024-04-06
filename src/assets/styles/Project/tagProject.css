@@ -1,0 +1,8 @@
+.lang__tag {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--bgProjectTag);
+  font: 400 12px var(--fontNormal);
+  color: var(--textNormal);
+  margin-top: 10px;
+}
