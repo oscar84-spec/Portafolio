@@ -27,7 +27,7 @@ const Home = () => {
         <div className='moon'></div>
       </div>
       <a
-        href='src/assets/Oscar Ubaldo Hernández Salvador CV.pdf'
+        href='https://drive.google.com/file/d/1lNoWe382uh8A-NiLlNNAaJiUqKKc5KGi/view?usp=drive_link'
         download='Oscar Hernández CV'
       >
         <button type='button' className='btn__download'>
