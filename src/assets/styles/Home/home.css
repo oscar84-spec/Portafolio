@@ -73,7 +73,7 @@
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .presentation__container {
-    width: calc(100%- 200px);
+    width: calc(100% - 200px);
   }
   .presentation__name {
     font: 400 34px var(--fontTitle);
