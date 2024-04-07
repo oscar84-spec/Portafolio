@@ -3,7 +3,7 @@ import { LuDownload } from "react-icons/lu";
 const DownloadButton = () => {
   const handleDownload = () => {
     // URL del archivo PDF
-    const pdfUrl = "/src/assets/OHCV.pdf";
+    const pdfUrl = "/OHCV.pdf";
 
     // Crea un elemento <a> temporal para descargar el archivo
     const link = document.createElement("a");

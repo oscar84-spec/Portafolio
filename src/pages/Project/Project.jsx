@@ -8,7 +8,7 @@ const Project = () => {
   const projects = [
     {
       id: 1,
-      img: "/src/assets/img/pokeApi.jpg",
+      img: "/pokeApi.jpg",
       name: "API Pokémon",
       linkGithub: "https://github.com/oscar84-spec/API-Pok-mon",
       linkDemo: "https://oscar84-spec.github.io/API-Pok-mon/",
@@ -21,8 +21,8 @@ const Project = () => {
       ],
     },
     {
-      id: 4,
-      img: "src/assets/img/cashRegister.jpg",
+      id: 2,
+      img: "/cashRegister.jpg",
       name: "Caja Registradora",
       linkGithub: "https://github.com/oscar84-spec/Cash-Register",
       linkDemo: "https://oscar84-spec.github.io/Cash-Register/",
@@ -35,8 +35,8 @@ const Project = () => {
       ],
     },
     {
-      id: 2,
-      img: "src/assets/img/CRUD.png",
+      id: 3,
+      img: "/CRUD.png",
       name: "CRUD",
       linkGithub: "https://github.com/oscar84-spec/CRUD",
       linkDemo: "https://crud-smoky-gamma.vercel.app/",
@@ -49,7 +49,7 @@ const Project = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       img: "/ToDo.jpg",
       name: "To Do",
       linkGithub: "https://github.com/oscar84-spec/Lista-por-hacer",
