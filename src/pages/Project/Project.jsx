@@ -50,7 +50,7 @@ const Project = () => {
     },
     {
       id: 3,
-      img: "/public/ToDo.jpg",
+      img: "/ToDo.jpg",
       name: "To Do",
       linkGithub: "https://github.com/oscar84-spec/Lista-por-hacer",
       linkDemo: "https://oscar84-spec.github.io/Lista-por-hacer/",
