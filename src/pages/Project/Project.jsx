@@ -8,7 +8,7 @@ const Project = () => {
   const projects = [
     {
       id: 1,
-      img: "src/assets/img/pokeApi.jpg",
+      img: "/src/assets/img/pokeApi.jpg",
       name: "API Pokémon",
       linkGithub: "https://github.com/oscar84-spec/API-Pok-mon",
       linkDemo: "https://oscar84-spec.github.io/API-Pok-mon/",
@@ -50,7 +50,7 @@ const Project = () => {
     },
     {
       id: 3,
-      img: "src/assets/img/ToDo.jpg",
+      img: "/public/ToDo.jpg",
       name: "To Do",
       linkGithub: "https://github.com/oscar84-spec/Lista-por-hacer",
       linkDemo: "https://oscar84-spec.github.io/Lista-por-hacer/",
@@ -71,7 +71,7 @@ const Project = () => {
           <CardProject key={proyecto.id} proyecto={proyecto} />
         ))}
       </div>
-      <OtherProject/>
+      <OtherProject />
     </section>
   );
 };
