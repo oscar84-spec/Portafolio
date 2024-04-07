@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 /* ======================Importando iconos de react icons================ */
 import { LuDownload } from "react-icons/lu";
 import SocialMedia from "./SocialMedia";
+import DownloadButton from "./DownloadButton";
 
 const Home = () => {
   return (
@@ -26,9 +27,9 @@ const Home = () => {
         <h3 className='presentation__job'>Desarrollador Web Front End</h3>
         <div className='moon'></div>
       </div>
-      <a
+      {/* <a
         href='https://drive.google.com/file/d/1lNoWe382uh8A-NiLlNNAaJiUqKKc5KGi/view?usp=drive_link'
-        download='Oscar Hernández CV'
+        download='Oscar Hernández CV.pdf'
       >
         <button type='button' className='btn__download'>
           <i className='btn__icon'>
@@ -36,7 +37,8 @@ const Home = () => {
           </i>{" "}
           Descargar CV
         </button>
-      </a>
+      </a> */}
+      <DownloadButton />
       <SocialMedia />
     </section>
   );
