@@ -34,3 +34,50 @@
 .footer__name {
   color: var(--btnDownload);
 }
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .footer {
+    padding: 0 40px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    padding: 0 100px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100% - 200px);
+  }
+  .icons__footer {
+    svg {
+      width: 25px;
+      height: 25px;
+      color: var(--iconRedes);
+    }
+  }
+  .developer {
+    font: 400 16px var(--fontNormal);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .footer {
+    padding: 0 200px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100% - 400px);
+  }
+  .icons__footer {
+    svg {
+      width: 25px;
+      height: 25px;
+      color: var(--iconRedes);
+    }
+  }
+  .developer {
+    font: 400 16px var(--fontNormal);
+  }
+}

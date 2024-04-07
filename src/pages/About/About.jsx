@@ -88,9 +88,11 @@ const About = () => {
       </p>
       <div className='skill__container'>
         <h2 className='skill__subtitle'>Habilidades</h2>
-        {cards.map((card) => (
-          <CardSkills key={card.id} card={card} />
-        ))}
+        <div className='parent'>
+          {cards.map((card) => (
+            <CardSkills key={card.id} card={card} />
+          ))}
+        </div>
       </div>
     </section>
   );

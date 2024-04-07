@@ -2,6 +2,10 @@
   padding: 0 20px;
   margin-top: 50px;
 }
+.contactParent {
+  display: flex;
+  justify-content: space-between;
+}
 .contact__title {
   font: 400 28px var(--fontTitle);
   color: var(--textTitle);
@@ -32,4 +36,33 @@
 .linkContact {
   font: 400 16px var(--fontNormal);
   color: var(--textFormation);
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .contact {
+    padding: 0 40px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .contact {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__container {
+    width: 400px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .contact {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__container {
+    width: 400px;
+    margin-top: 20px;
+  }
 }

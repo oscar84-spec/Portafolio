@@ -9,3 +9,20 @@
 .other__container {
   margin-top: 30px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .other__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .other__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .other__title {
+    font: 400 24px var(--fontSubtitle);
+  }
+}

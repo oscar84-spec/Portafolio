@@ -10,24 +10,25 @@ const Footer = () => {
       <hr />
       <div className='flex'>
         <div className='iconFooter'>
-          <a href=''>
+          <a href='https://github.com/oscar84-spec' target='_blank'>
             <i className='icons__footer'>
               <FaGithub />
             </i>
           </a>
-          <a href=''>
-            <i className='icons__footer'>
+          <a href='https://www.linkedin.com/in/oscar-hdz202/'>
+            <i className='icons__footer' target='_blank'>
               <FaLinkedin />
             </i>
           </a>
-          <a href=''>
+          <a href='' target='_blank'>
             <i className='icons__footer'>
               <FaTwitter />
             </i>
           </a>
         </div>
         <h1 className='developer'>
-          Desarrollado <span className='footer__name'>Oscar Hernández</span>
+          Desarrollado por:{" "}
+          <span className='footer__name'>Oscar Hernández</span>
         </h1>
       </div>
     </footer>

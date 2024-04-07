@@ -12,3 +12,32 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .project {
+    padding: 0 40px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .project__title {
+    font: 400 34px var(--fontTitle);
+  }
+  .project {
+    padding: 0 100px;
+  }
+  .project__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .project__title {
+    font: 400 34px var(--fontTitle);
+  }
+  .project {
+    padding: 0 200px;
+  }
+  .project__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

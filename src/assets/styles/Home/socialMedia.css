@@ -16,3 +16,39 @@
     color: var(--iconRedes);
   }
 }
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .redes__icon {
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .redes {
+    width: 120px;
+  }
+  .redes__icon {
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .redes {
+    width: 140px;
+  }
+  .redes__icon {
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .redes__icon:hover {
+    cursor: pointer;
+    svg {
+      color: var(--btnDownload);
+    }
+  }
+}

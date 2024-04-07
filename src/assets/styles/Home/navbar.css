@@ -1,3 +1,30 @@
 .navbar {
   display: none;
 }
+@media only screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar {
+    display: block;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #292e3b;
+    color: var(--textNormal);
+    font: 400 16px var(--fontNormal);
+    position: fixed;
+    a:hover {
+      color: var(--btnDownload);
+    }
+    z-index: 999;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    font: 400 18px var(--fontNormal);
+  }
+}

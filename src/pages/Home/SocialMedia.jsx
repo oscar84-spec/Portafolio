@@ -8,17 +8,17 @@ import { FaTwitter } from "react-icons/fa";
 const SocialMedia = () => {
   return (
     <div className='redes'>
-      <a href='https://github.com/oscar84-spec'>
+      <a href='https://github.com/oscar84-spec' target='_blank'>
         <i className='redes__icon'>
           <FaGithub />
         </i>
       </a>
-      <a href='https://www.linkedin.com/in/oscar-hdz202/'>
+      <a href='https://www.linkedin.com/in/oscar-hdz202/' target='_blank'>
         <i className='redes__icon'>
           <FaLinkedin />
         </i>
       </a>
-      <a href=''>
+      <a href='' target='_blank'>
         <i className='redes__icon'>
           <FaTwitter />
         </i>

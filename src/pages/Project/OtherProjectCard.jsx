@@ -16,7 +16,7 @@ const OtherProjectCard = ({ otro }) => {
   const [showDescription, setShowDescription] = useState(false);
   const toogleDescription = () => setShowDescription(!showDescription);
   return (
-    <>
+    <div className='parentContainer'>
       <div
         className='otroProyecto'
         style={
@@ -64,7 +64,7 @@ const OtherProjectCard = ({ otro }) => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

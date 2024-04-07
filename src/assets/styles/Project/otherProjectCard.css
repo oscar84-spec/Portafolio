@@ -10,6 +10,10 @@
   align-items: center;
   height: 50px;
   padding: 0 10px;
+  width: 100%;
+}
+.parentContainer {
+  width: 100%;
 }
 .otroProyecto__iconDropDown {
   svg {
@@ -62,4 +66,20 @@
   text-align: justify;
   font: 400 14px var(--fontNormal);
   color: var(--textNormal);
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .parentContainer {
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .parentContainer {
+    width: 300px;
+  }
+  .otroProyecto__iconDropDown:hover {
+    cursor: pointer;
+    svg {
+      color: var(--btnDownload);
+    }
+  }
 }
