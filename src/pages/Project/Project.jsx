@@ -41,7 +41,7 @@ const Project = () => {
       linkGithub: "https://github.com/oscar84-spec/CRUD",
       linkDemo: "https://crud-smoky-gamma.vercel.app/",
       description:
-        "Proyecto de Alura donde se hace un CRUD con la fake API JSON Servery manipulación del DOM.",
+        "Proyecto de Alura donde se hace un CRUD con la fake API JSON Server y manipulación del DOM.",
       tags: [
         { id: 1, text: "HTML5" },
         { id: 2, text: "CSS3" },
