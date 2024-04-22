@@ -29,6 +29,9 @@
   font: 400 14px var(--fontNormal);
   color: var(--textFormation);
 }
+.link__btn {
+  width: max-content;
+}
 .btn__cert {
   width: 100px;
   outline: none;

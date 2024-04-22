@@ -29,7 +29,7 @@ const Formation = ({ form }) => {
           <div className='formaciones' key={forma.id}>
             <div className='formaciones__container'>
               <li className='formaciones__name'>{forma.nameForm}</li>
-              <a href={forma.link}>
+              <a href={forma.link} className='link__btn'>
                 <button type='button' className='btn__cert'>
                   Certificado
                 </button>
