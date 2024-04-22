@@ -13,17 +13,17 @@ const Education = () => {
         {
           id: 1,
           nameForm: "Formación Front End G5 - ONE",
-          link: "https://app.aluracursos.com/user/ohdz202/degree-frontend-grupo5-one-15575/certificate",
+          link: "https://app.aluracursos.com/emprega-one/profile/ohdz202",
         },
         {
           id: 2,
           nameForm: "Formación HTML y CSS",
-          link: "https://app.aluracursos.com/user/ohdz202/degree-html-css-15485/certificate",
+          link: "https://app.aluracursos.com/emprega-one/profile/ohdz202",
         },
         {
           id: 3,
           nameForm: "Formación React G5 - ONE",
-          link: "https://app.aluracursos.com/user/ohdz202/degree-react-grupo5-one-15576/certificate",
+          link: "https://app.aluracursos.com/emprega-one/profile/ohdz202",
         },
       ],
     },
