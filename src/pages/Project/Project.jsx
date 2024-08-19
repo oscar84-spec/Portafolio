@@ -7,6 +7,21 @@ import OtherProject from "./OtherProject";
 const Project = () => {
   const projects = [
     {
+      id: 5,
+      img: "/easytask.png",
+      name: "Clon de Trello",
+      linkGithub: "https://github.com/oscar84-spec/easyTask",
+      linkDemo: "https://easy-task-lake.vercel.app/",
+      description:
+        "Un clon de Trello básico con React JS, teniendo un registro de usuarios y un inicio de sesión.",
+      tags: [
+        { id: 1, text: "HTML5" },
+        { id: 2, text: "CSS3" },
+        { id: 3, text: "JavaScript" },
+        { id: 4, text: "React JS" },
+      ],
+    },
+    {
       id: 1,
       img: "/pokeApi.jpg",
       name: "API Pokémon",
