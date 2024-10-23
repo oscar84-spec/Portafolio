@@ -7,6 +7,22 @@ import OtherProject from "./OtherProject";
 const Project = () => {
   const projects = [
     {
+      id: 3,
+      img: "/CRUD.png",
+      name: "Ecomerce CRUD",
+      linkGithub: "https://github.com/oscar84-spec/Ecommerce",
+      linkDemo: "https://ecommerce-seven-beige-79.vercel.app/",
+      description:
+        "Proyecto de un ecommerce CRUD con React y node js, donde se pueden agregar y editar productos.",
+      tags: [
+        { id: 1, text: "HTML5" },
+        { id: 2, text: "CSS3" },
+        { id: 3, text: "JavaScript" },
+        { id: 4, text: "React JS" },
+        { id: 5, text: "Node JS" },
+      ],
+    },
+    {
       id: 5,
       img: "/easytask.png",
       name: "Clon de Trello",
@@ -19,6 +35,7 @@ const Project = () => {
         { id: 2, text: "CSS3" },
         { id: 3, text: "JavaScript" },
         { id: 4, text: "React JS" },
+        { id: 5, text: "Node JS" },
       ],
     },
     {
@@ -43,20 +60,6 @@ const Project = () => {
       linkDemo: "https://oscar84-spec.github.io/Cash-Register/",
       description:
         "Proyecto de certificación de freeCodeCamp de una caja registradora donde se le devuele el cambio al usuario.",
-      tags: [
-        { id: 1, text: "HTML5" },
-        { id: 2, text: "CSS3" },
-        { id: 3, text: "JavaScript" },
-      ],
-    },
-    {
-      id: 3,
-      img: "/CRUD.png",
-      name: "CRUD",
-      linkGithub: "https://github.com/oscar84-spec/CRUD",
-      linkDemo: "https://crud-smoky-gamma.vercel.app/",
-      description:
-        "Proyecto de Alura donde se hace un CRUD con la fake API JSON Server y manipulación del DOM.",
       tags: [
         { id: 1, text: "HTML5" },
         { id: 2, text: "CSS3" },
