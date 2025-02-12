@@ -1,1 +1,17 @@
 @import "tailwindcss";
+@import "@fontsource-variable/dancing-script";
+@import "@fontsource-variable/comfortaa";
+
+@theme {
+  --color-btn-primary: #1c556c;
+  --color-btn-secondary: #3a889a;
+  --color-text: #f1f9f9;
+  --color-hover: #8bd2ce;
+  --color-badge: #141515;
+  --color-text-badge: #bfc0f3;
+  --color-text-accent: #3f5d86;
+  --color-project-badge: #1f525d;
+  --breakpoint-xs: 320px;
+  --font-logo: "Dancing Script Variable";
+  --font-body: "Comfortaa Variable";
+}

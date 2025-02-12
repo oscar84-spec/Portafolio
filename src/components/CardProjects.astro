@@ -1,0 +1,58 @@
+---
+import BadgeProject from "./BadgeProject.astro";
+import Button from "./Button.astro";
+import LinkIcon from "../Icons/Link.astro";
+const projects = [
+  {
+    title: "Country Flags",
+    description:
+      "Consumo de una API para mostrar datos dinámicos de más de 100 paises y clasificarlos por región",
+    tags: ["React JS"],
+    image: "/projects/countryflags.webp",
+    class: "",
+    link: "https://countries-flags-five.vercel.app/",
+  },
+  {
+    title: "Ecommerce",
+    description:
+      "Creación de un Ecommerce básico usando una API hecha con Node Js y Express.",
+    tags: ["React Js", "Node Js", "Express"],
+    image: "/projects/ecommerce.webp",
+    clase: "flex-row-reverse",
+    link: "https://ecommerce-seven-beige-79.vercel.app/",
+  },
+];
+---
+
+{
+  projects.map(({ title, description, tags, image, clase, link }) => (
+    <div class='md:flex gap-5 group'>
+      <div class='w-full md:w-1/2'>
+        <img
+          class='rounded-lg md:h-full '
+          src={image}
+          alt={`Captura de pantalla del proyecto ${title}`}
+        />
+      </div>
+      <div class='flex flex-col gap-2.5 justify-evenly md:w-1/2'>
+        <div class='flex flex-col gap-2'>
+          <h3 class='text-lg text-text font-body xl:text-2xl font-bold'>
+            {title}
+          </h3>
+          <div class='flex gap-2.5'>
+            {tags.map((tag) => (
+              <BadgeProject>{tag}</BadgeProject>
+            ))}
+          </div>
+        </div>
+        <p class='text-text font-body text-sm xl:text-lg'>{description}</p>
+        <Button
+          class='w-max h-10 flex gap-3 items-center  bg-gray-500/30 text-text font-body text-sm px-3 py-1 rounded-lg border-1 border-gray-300 lg:hover:scale-105 lg:hover:cursor-pointer lg:transition duration-500 ease-in-out'
+          href={link}
+        >
+          <LinkIcon class='size-5' /> Preview
+        </Button>
+      </div>
+    </div>
+  ))
+}

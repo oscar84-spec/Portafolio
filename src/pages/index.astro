@@ -1,11 +1,65 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Badge from "../components/Badge.astro";
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+import DownloadIcon from "../Icons/Download.astro";
+import MailIcon from "../Icons/Mail.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import BracketIcon from "../Icons/Brackets.astro";
+import CardProjects from "../components/CardProjects.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <main class='border-2 border-red-600 w-full px-5 md:px-30 lg:px-60'>
+    <SectionContainer>
+      <div class='flex gap-2.5 items-center'>
+        <img
+          class='size-12 rounded-full object-cover lg:size-14'
+          src='./src/assets/Foto.svg'
+          alt='Foto Oscar'
+        />
+        <Badge>Disponible para Trabajo</Badge>
+      </div>
+      <h1
+        class='xs:text-2xl font-body font-extrabold text-text mt-10 md:text-4xl lg:text-5xl text-balance'
+      >
+        Hola, Soy Oscar <span class='text-text-accent'>Hernández</span>
+      </h1>
+      <p class='mt-5 text-text font-body text-pretty opacity-85 lg:text-lg'>
+        Desarrollador Web Front End Jr con fuertes habilidades en
+        <span class='text-orange-600'>HTML</span>, <span class='text-sky-600'
+          >CSS</span
+        > y <span class='text-yellow-400'>JavaScript</span>
+        Comprmetido con la creacion de sitios y aplicaciones web modernas.
+      </p>
+      <div
+        class='xs:flex flex-col gap-2.5 mt-5
+      md:flex-row justify-between md:gap-10'
+      >
+        <Button
+          class='flex justify-center items-center gap-2.5 w-full h-10 px-3 py-1 rounded-full text-text font-body animate-pulse bg-btn-primary'
+          href='/'
+          '><MailIcon class='size-5' /> Contáctame</Button
+        >
+        <Button
+          class='flex justify-center items-center gap-2.5 w-full h-10 px-3 py-1 rounded-full text-text font-body bg-btn-secondary'
+          href='/'
+          download='Oscar Hernández'
+          ><DownloadIcon class='size-5' /> Descargar CV</Button
+        >
+      </div>
+    </SectionContainer>
+    <!-- Seccion de proyectos -->
+    <SectionContainer class='mt-20 lg:w-[600px] xl:w-[800px]'>
+      <h2
+        class='text-lg font-body font-bold text-text flex gap-2.5 items-center lg:text-2xl lg:items-center'
+      >
+        <BracketIcon class='size-5' /> Proyectos
+      </h2>
+      <!-- Aqui se muestran las cards de los proyectos -->
+      <div class='flex flex-col gap-10 mt-10'>
+        <CardProjects />
+      </div>
+    </SectionContainer>
+  </main>
 </Layout>

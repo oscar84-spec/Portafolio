@@ -1,0 +1,14 @@
+---
+import MenuDesktop from "./MenuDesktop.astro";
+import MenuMobile from "./MenuMobile.astro";
+---
+
+<header
+  class='w-full h-18 px-5 flex items-center justify-between md:px-30 lg:px-60'
+>
+  <span class='text-3xl text-white font-logo tracking-[0.3em]'>
+    <a href='/'>Oscar</a>
+  </span>
+  <MenuMobile />
+  <MenuDesktop />
+</header>

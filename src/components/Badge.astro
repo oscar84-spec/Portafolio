@@ -1,0 +1,16 @@
+---
+import "../styles/badge.css";
+---
+
+<button
+  class='relative inline-flex overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-offset-2 focus:ring-offset-gray-50 h-9 items-center animate__badge'
+>
+  <span
+    class='absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]'
+  ></span>
+  <span
+    class='w-max h-8 inline-flex cursor-pointer items-center justify-center rounded-full bg-badge px-3 py-1 backdrop-blur-3xl text-text-badge font-body text-sm'
+  >
+    <slot />
+  </span>
+</button>
