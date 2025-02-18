@@ -2,6 +2,7 @@
 import BadgeProject from "./BadgeProject.astro";
 import Button from "./Button.astro";
 import LinkIcon from "../Icons/Link.astro";
+import "../styles/animations.css";
 const projects = [
   {
     title: "Country Flags",
@@ -25,11 +26,11 @@ const projects = [
 ---
 
 {
-  projects.map(({ title, description, tags, image, clase, link }) => (
+  projects.map(({ title, description, tags, image, link }) => (
     <div class='md:flex gap-5 group'>
       <div class='w-full md:w-1/2'>
         <img
-          class='rounded-lg md:h-full '
+          class='rounded-lg md:h-full images__project'
           src={image}
           alt={`Captura de pantalla del proyecto ${title}`}
         />

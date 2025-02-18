@@ -1,0 +1,71 @@
+.img__animate {
+  opacity: 0;
+  animation: imgAnimation 800ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes imgAnimation {
+  100% {
+    opacity: 1;
+  }
+}
+.title__animate {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: titleAnimation 800ms ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 800ms;
+}
+@keyframes titleAnimation {
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.text__animate {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: textAnimation 800ms ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.3s;
+}
+@keyframes textAnimation {
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.buttons__animate {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: buttonsAnimation 800ms ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2.2s;
+}
+@keyframes buttonsAnimation {
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.images__project {
+  opacity: 0;
+  scale: 25%;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+.images__project {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}

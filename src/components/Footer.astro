@@ -1,17 +1,31 @@
-<footer class='px-5 py-10 md:flex justify-between md:px-30 lg:px-60'>
+---
+import LinkedinIcon from "../Icons/Linkedin.astro";
+import MailIcon from "../Icons/Mail.astro";
+import WhatsIcon from "../Icons/Whatsapp.astro";
+---
+
+<footer
+  class='px-5 py-10 md:flex md:justify-between md:px-30 lg:px-60 xl:mt-20 xl:py-10'
+>
   <span
     class='text-neutral-300 text-sm font-body text-pretty md:w-1/2 lg:text-md'
     >© 2024 Oscar Hernández. Todos los derechos reservados</span
   >
   <hr class='border-neutral-400 mt-2 md:hidden' />
-  <div class='mt-5 md:mt-0'>
+  <div class='mt-5 md:mt-0 md:w-1/2'>
     <h3 class='text-lg font-body font-bold text-text lg:text-xl'>Contacto</h3>
     <ul
-      class='flex flex-col gap-2 text-orange-200 font-body text-sm md:flex-row md:gap-10 md:items-center md:mt-2 lg:text-md'
+      class='flex flex-col gap-2 text-orange-200 font-body text-sm mt-5 md:flex-row md:gap-10 md:items-center md:mt-2 md:flex-wrap lg:text-md'
     >
-      <a href=''>LinkedIn</a>
-      <a href='mailto:ohdz202@gmail.com'>Email</a>
-      <a href='tel:+525578449821'>Whatsapp</a>
+      <a class='flex gap-2.5 items-center' href=''
+        ><LinkedinIcon class='size-5' /> LinkedIn</a
+      >
+      <a class='flex gap-2.5 items-center' href='mailto:ohdz202@gmail.com'
+        ><MailIcon class='size-5' /> Email</a
+      >
+      <a class='flex gap-2.5 items-center' href='tel:+525578449821'
+        ><WhatsIcon class='size-5' /> Whatsapp</a
+      >
     </ul>
   </div>
 </footer>

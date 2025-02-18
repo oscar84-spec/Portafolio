@@ -8,34 +8,37 @@ import SectionContainer from "../components/SectionContainer.astro";
 import BracketIcon from "../Icons/Brackets.astro";
 import CardProjects from "../components/CardProjects.astro";
 import UserIcon from "../Icons/User.astro";
+import "../styles/animations.css";
 ---
 
 <Layout>
-  <main class='border-2 border-red-600 w-full px-5 md:px-30 lg:px-60'>
+  <main class='w-full px-5 md:px-30 lg:px-60'>
     <SectionContainer>
       <div class='flex gap-2.5 items-center'>
         <img
-          class='size-12 rounded-full object-cover lg:size-14'
+          class='size-12 rounded-full object-cover lg:size-14 img__animate'
           src='./src/assets/Foto.svg'
           alt='Foto Oscar'
         />
         <Badge>Disponible para Trabajo</Badge>
       </div>
       <h1
-        class='xs:text-2xl font-body font-extrabold text-text mt-10 md:text-4xl lg:text-5xl text-balance'
+        class='xs:text-2xl font-body font-extrabold text-text mt-10 md:text-4xl lg:text-5xl text-balance title__animate'
       >
         Hola, Soy Oscar <span class='text-text-accent'>Hernández</span>
       </h1>
-      <p class='mt-5 text-text font-body text-pretty opacity-85 lg:text-lg'>
+      <p
+        class='mt-5 text-text font-body text-pretty opacity-85 lg:text-lg text__animate'
+      >
         Desarrollador Web Front End Jr con fuertes habilidades en
         <span class='text-orange-600'>HTML</span>, <span class='text-sky-600'
           >CSS</span
         > y <span class='text-yellow-400'>JavaScript</span>
-        Comprmetido con la creacion de sitios y aplicaciones web modernas.
+        Comprometido con la creacion de sitios y aplicaciones web modernas.
       </p>
       <div
         class='xs:flex flex-col gap-2.5 mt-5
-      md:flex-row justify-between md:gap-10'
+      md:flex-row justify-between md:gap-10 xl:w-1/2 buttons__animate'
       >
         <Button
           class='flex justify-center items-center gap-2.5 w-full h-10 px-3 py-1 rounded-full text-text font-body animate-pulse bg-btn-primary'

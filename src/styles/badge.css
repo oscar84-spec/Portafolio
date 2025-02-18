@@ -1,7 +1,7 @@
 .animate__badge {
   opacity: 0;
   animation: badgeAnimation 800ms ease-in-out;
-  animation-delay: 1s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 @keyframes badgeAnimation {
