@@ -19,6 +19,7 @@ import "../styles/animations.css";
           class='size-12 rounded-full object-cover lg:size-14 img__animate'
           src='./src/assets/Foto.svg'
           alt='Foto Oscar'
+          loading='lazy'
         />
         <Badge>Disponible para Trabajo</Badge>
       </div>
@@ -42,19 +43,19 @@ import "../styles/animations.css";
       >
         <Button
           class='flex justify-center items-center gap-2.5 w-full h-10 px-3 py-1 rounded-full text-text font-body animate-pulse bg-btn-primary'
-          href='/'
+          href='tel:+525578449821'
           '><MailIcon class='size-5' /> Contáctame</Button
         >
         <Button
           class='flex justify-center items-center gap-2.5 w-full h-10 px-3 py-1 rounded-full text-text font-body bg-btn-secondary'
-          href='/'
-          download='Oscar Hernández'
+          href='./src/assets/oscar_cv.pdf'
+          download='Oscar Hernández - CV'
           ><DownloadIcon class='size-5' /> Descargar CV</Button
         >
       </div>
     </SectionContainer>
     <!-- Seccion de proyectos -->
-    <SectionContainer class='mt-20 lg:w-[600px] xl:w-[800px]'>
+    <SectionContainer class='mt-20 lg:w-[600px] xl:w-[800px]' id='projects'>
       <h2
         class='text-lg font-body font-bold text-text flex gap-2.5 items-center lg:text-2xl lg:items-center'
       >
@@ -65,7 +66,7 @@ import "../styles/animations.css";
         <CardProjects />
       </div>
     </SectionContainer>
-    <SectionContainer class='lg:w-[600px] xl:w-[800px]'>
+    <SectionContainer class='lg:w-[600px] xl:w-[800px]' id='about'>
       <h3 class='text-xl font-body font-bold text-text flex gap-3 items-center'>
         <UserIcon class='size-5' /> Sobre mí
       </h3>
@@ -96,6 +97,7 @@ import "../styles/animations.css";
             class='w-full h-48 rounded-lg rotate-3 md:w-[220px] md:h-full'
             src='./src/assets/Foto.svg'
             alt='Foto Oscar'
+            loading='lazy'
           />
         </div>
       </div>
