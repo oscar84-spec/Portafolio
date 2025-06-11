@@ -5,6 +5,16 @@ import LinkIcon from "../Icons/Link.astro";
 import "../styles/animations.css";
 const projects = [
   {
+    title: "Trello Clone",
+    description:
+      "Un clon de Trello hecho con React con Typescript y Tailwind CSS, con la funcionalidad de crear y eliminar tableros, listas y tarjetas. Autenticación con JWT y una API hecho con Node Js y Express con una base de datos MongoDB en la nube.",
+    tags: ["React TS", "Tailwind CSS", "Node Js", "Express", "MongoDB"],
+    image: "/projects/taskflow.webp",
+    class: "",
+    link: "https://clone-trello-ten.vercel.app/",
+    nota: "La API del proyecto está alojada en render.com, pero tiene algo llamado cold start, por lo que puede tardar de 10s a 30s en responder. Por su paciencia, gracias",
+  },
+  {
     title: "Country Flags",
     description:
       "Consumo de una API para mostrar datos dinámicos de más de 100 paises y clasificarlos por región",
@@ -26,33 +36,34 @@ const projects = [
 ---
 
 {
-  projects.map(({ title, description, tags, image, link }) => (
-    <div class='md:flex gap-5 group'>
-      <div class='w-full md:w-1/2'>
+  projects.map(({ title, description, tags, image, link, nota }) => (
+    <div class="md:flex gap-5 group">
+      <div class="w-full md:w-1/2">
         <img
-          class='rounded-lg md:h-full images__project'
+          class="rounded-lg md:h-full images__project"
           src={image}
           alt={`Captura de pantalla del proyecto ${title}`}
-          loading='lazy'
+          loading="lazy"
         />
       </div>
-      <div class='flex flex-col gap-2.5 justify-evenly md:w-1/2'>
-        <div class='flex flex-col gap-2'>
-          <h3 class='text-lg text-text font-body xl:text-2xl font-bold'>
+      <div class="flex flex-col gap-2.5 justify-evenly md:w-1/2">
+        <div class="flex flex-col gap-2">
+          <h3 class="text-lg text-text font-body xl:text-2xl font-bold">
             {title}
           </h3>
-          <div class='flex gap-2.5'>
+          <div class="flex gap-2.5 flex-wrap">
             {tags.map((tag) => (
               <BadgeProject>{tag}</BadgeProject>
             ))}
           </div>
         </div>
-        <p class='text-text font-body text-sm xl:text-lg'>{description}</p>
+        <p class="text-text font-body text-sm xl:text-lg">{description}</p>
+        <span class="text-xs text-amber-300 font-body">{nota}</span>
         <Button
-          class='w-max h-10 flex gap-3 items-center  bg-gray-500/30 text-text font-body text-sm px-3 py-1 rounded-lg border-1 border-gray-300 lg:hover:scale-105 lg:hover:cursor-pointer lg:transition duration-500 ease-in-out'
+          class="w-max h-10 flex gap-3 items-center  bg-gray-500/30 text-text font-body text-sm px-3 py-1 rounded-lg border-1 border-gray-300 lg:hover:scale-105 lg:hover:cursor-pointer lg:transition duration-500 ease-in-out"
           href={link}
         >
-          <LinkIcon class='size-5' /> Preview
+          <LinkIcon class="size-5" /> Preview
         </Button>
       </div>
     </div>
