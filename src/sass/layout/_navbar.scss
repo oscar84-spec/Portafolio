@@ -1,0 +1,62 @@
+@use "../theme/variables";
+@use "../mixins/mixins";
+
+.navbar {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  &__list {
+    @include mixins.create-flex();
+    gap: 20px;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    cursor: pointer;
+    color: variables.$text-normal;
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+
+    &:hover {
+      color: variables.$text-title;
+      transform: scale(1.05);
+    }
+  }
+}
+
+.nav-sidebar {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &__list {
+    @include mixins.create-flex();
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__item {
+    list-style: none;
+  }
+  &__link {
+    text-decoration: none;
+    cursor: pointer;
+    color: variables.$text-normal;
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    &:hover {
+      color: variables.$text-title;
+      transform: scale(1.05);
+    }
+  }
+}

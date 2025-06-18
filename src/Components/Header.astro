@@ -1,0 +1,47 @@
+---
+import { GithubIcon, LinkedinIcon } from "../assets/icons";
+import { Logo, Navbar, MenuIcon } from "./index";
+---
+
+<header class="hero__header">
+  <div class="hero__container-logo">
+    <Logo />
+    <Navbar styles="navbar" />
+  </div>
+  <MenuIcon />
+  <div class="hero__container-icon">
+    <a
+      href="https://github.com/oscar84-spec"
+      target="_blank"
+      rel="noopener noreferrer"><GithubIcon /></a
+    >
+    <a
+      href="https://www.linkedin.com/in/devoscardev/"
+      target="_blank"
+      rel="noopener noreferrer"><LinkedinIcon /></a
+    >
+  </div>
+  <aside class="hero__sidebar menu" id="drop">
+    <Navbar styles="nav-sidebar" />
+    <div class="hero__container-icon hero__container-icon--sidebar">
+      <a
+        href="https://github.com/oscar84-spec"
+        target="_blank"
+        rel="noopener noreferrer"><GithubIcon /></a
+      >
+      <a
+        href="https://www.linkedin.com/in/devoscardev/"
+        target="_blank"
+        rel="noopener noreferrer"><LinkedinIcon /></a
+      >
+    </div>
+  </aside>
+</header>
+
+<script>
+  const menu = document.getElementById("menu");
+  const drop = document.getElementById("drop");
+  menu?.addEventListener("click", () => {
+    drop?.classList.toggle("hero__sidebar--animate");
+  });
+</script>

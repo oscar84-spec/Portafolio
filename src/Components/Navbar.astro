@@ -1,0 +1,24 @@
+---
+type Props = {
+  styles: string;
+};
+
+const { styles } = Astro.props;
+---
+
+<nav class={styles}>
+  <ul class=`${styles}__list`>
+    <li class=`${styles}__item`>
+      <a href="#inicio" class=`${styles}__link`>Inicio</a>
+    </li>
+    <li class=`${styles}__item`>
+      <a href="#proyectos" class=`${styles}__link`>Proyectos</a>
+    </li>
+    <li class=`${styles}__item`>
+      <a href="#habilidades" class=`${styles}__link`>Habilidades</a>
+    </li>
+    <li class=`${styles}__item`>
+      <a href="#sobre-mi" class=`${styles}__link`>Sobre mi</a>
+    </li>
+  </ul>
+</nav>

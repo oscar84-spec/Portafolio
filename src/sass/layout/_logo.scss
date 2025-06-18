@@ -1,0 +1,9 @@
+@use "../theme/variables";
+
+.logo {
+  font: 1.5rem variables.$font-logo;
+  color: variables.$text-title;
+  text-decoration: none;
+  letter-spacing: 0.3em;
+  z-index: 100;
+}

@@ -1,0 +1,28 @@
+@use "../../theme/variables";
+@use "../../mixins/mixins";
+
+.hero {
+  width: 100%;
+  height: 100vh;
+
+  &__container-icon {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      @include mixins.create-flex();
+      gap: 20px;
+    }
+
+    &--sidebar {
+      @include mixins.create-flex(center);
+      gap: 20px;
+      margin-top: 40px;
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: variables.$icons;
+  }
+}

@@ -9,6 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/comfortaa": "^5.2.6",
+    "@fontsource-variable/dancing-script": "^5.2.6",
     "astro": "^5.9.4"
+  },
+  "devDependencies": {
+    "sass": "^1.89.2"
   }
 }
