@@ -1,0 +1,240 @@
+@use "../../theme/variables";
+@use "../../mixins/mixins";
+
+.hero__content-container {
+  width: 100%;
+  height: calc(100vh - 56px);
+  @include mixins.hero-content-flex($direction: column, $gap: 30px);
+  padding: 0 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 40px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 0 176px;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 0 208px;
+  }
+}
+.hero__container-presentation {
+  width: 100%;
+  @include mixins.hero-content-flex($direction: column, $gap: 20px);
+}
+
+.hero__container-avatar {
+  width: 100%;
+  @include mixins.hero-content-flex(
+    $direction: row,
+    $gap: 12px,
+    $align: center
+  );
+}
+
+.hero__avatar {
+  width: 60px;
+  height: 60px;
+  background-color: variables.$icons;
+  border-radius: 50px;
+}
+
+.hero__container-text {
+  @include mixins.hero-content-flex($direction: column, $gap: 12px);
+}
+
+.badge {
+  display: inline-flex;
+  width: 100%;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: variables.$badge solid 1px;
+  background-image: linear-gradient(
+    110deg,
+    #0a0a0a,
+    45%,
+    variables.$badge,
+    55%,
+    #0a0a0a
+  );
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  color: variables.$badge-text;
+  animation: bg-shine 3s linear infinite;
+  background-size: 200% 100%;
+  transition: all ease-in-out 0.3s;
+
+  & a {
+    text-decoration: none;
+    color: variables.$badge-text;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+  }
+}
+
+@keyframes bg-shine {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -200% 100%;
+  }
+}
+
+.hero__title {
+  font-size: 1.5rem;
+  color: variables.$text-title;
+
+  @media screen and (min-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 2.5rem;
+  }
+}
+.hero__subtitle {
+  font-size: 1rem;
+  color: variables.$text-normal;
+}
+
+.hero__button-cv {
+  text-decoration: none;
+  padding: 10px 0px;
+  background-color: variables.$btn-primary;
+  border-radius: 10px;
+  color: variables.$btn-primary-text;
+  @include mixins.hero-content-flex(
+    $direction: row,
+    $gap: 20px,
+    $justify: center
+  );
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: variables.$btn-primary-hover;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+  }
+}
+.hero__icon-download {
+  width: 20px;
+  height: 20px;
+}
+.hero__container-img {
+  width: 100%;
+  height: 250px;
+  border: red solid;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.hero__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.hero__icons-stack {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: blue solid;
+}
+
+.hero__stack-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+
+  &:first-child {
+    bottom: 20%;
+    left: 0;
+    animation: fadeIn 0.5s ease-out forwards,
+      float 2s ease-in-out infinite alternate;
+  }
+
+  &:nth-child(2) {
+    bottom: 20px;
+    left: 25%;
+    transform: translateX(-50%);
+    animation: fadeIn 0.5s ease-out 0.7s forwards,
+      float 2s ease-in-out 0.5s infinite alternate;
+    animation-delay: 0.7s;
+  }
+
+  &:nth-child(3) {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fadeIn 0.5s ease-out 1.3s forwards,
+      float 2s ease-in-out 1.3s infinite alternate;
+    animation-delay: 1.3s;
+  }
+
+  &:nth-child(4) {
+    bottom: 20px;
+    right: 25%;
+    transform: translateX(50%);
+    animation: fadeIn 0.5s ease-out 1s forwards,
+      float 2s ease-in-out 1s infinite alternate;
+    animation-delay: 0.5s;
+  }
+
+  &:last-child {
+    bottom: 20%;
+    right: 0;
+    animation: fadeIn 0.5s ease-out 0.3s forwards,
+      float 2s ease-in-out 0.3s infinite alternate;
+    animation-delay: 1s;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-3px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

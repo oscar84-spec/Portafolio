@@ -1,2 +1,8 @@
 export { default as GithubIcon } from "./GithubIcon.astro";
 export { default as LinkedinIcon } from "./LinkedinIcon.astro";
+export { default as DownloadIcon } from "./DownloadIcon.astro";
+export { default as HtmlIcon } from "./HtmlIcon.astro";
+export { default as CSSIcon } from "./CSSIcon.astro";
+export { default as JSIcon } from "./JSIcon.astro";
+export { default as ReactIcon } from "./ReactIcon.astro";
+export { default as TailwindIcon } from "./TailwindIcon.astro";

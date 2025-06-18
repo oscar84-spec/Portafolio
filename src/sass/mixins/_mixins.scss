@@ -3,3 +3,16 @@
   align-items: center;
   justify-content: $justify;
 }
+
+@mixin hero-content-flex(
+  $direction,
+  $gap,
+  $justify: flex-start,
+  $align: flex-start
+) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+  justify-content: $justify;
+  align-items: $align;
+}

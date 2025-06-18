@@ -1,7 +1,48 @@
 ---
-import { Header } from "./index";
+import { Header, Badge } from "./index";
+import {
+  DownloadIcon,
+  HtmlIcon,
+  CSSIcon,
+  JSIcon,
+  ReactIcon,
+  TailwindIcon,
+} from "../assets/icons";
 ---
 
 <section class="hero">
   <Header />
+  <div class="hero__content-container">
+    <div class="hero__container-presentation">
+      <div class="hero__container-avatar">
+        <img
+          src="./oscar-avatar.svg"
+          alt="Avatar de Oscar"
+          class="hero__avatar"
+        />
+        <!-- TODO: Agregar el badge de programador -->
+        <Badge />
+      </div>
+      <div class="hero__container-text">
+        <h2 class="hero__title">Hey, Soy Oscar Hernández 👋</h2>
+        <p class="hero__subtitle">Desarrollador web Front End</p>
+      </div>
+      <a
+        href="/public/oscar-cv.pdf"
+        download="Oscar_Ubaldo_Hernández_Salvador-CV"
+        class="hero__button-cv">Descargar CV <DownloadIcon /></a
+      >
+    </div>
+    <div class="hero__container-img">
+      <!-- TODO: Agregar la imagen de fondo con los iconos de stack-->
+      <img src="" alt="Foto de Oscar" class="hero__img" />
+      <div class="hero__icons-stack">
+        <HtmlIcon />
+        <CSSIcon />
+        <JSIcon />
+        <ReactIcon />
+        <TailwindIcon />
+      </div>
+    </div>
+  </div>
 </section>

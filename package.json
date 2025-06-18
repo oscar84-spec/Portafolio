@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "sass": "sass --watch src/sass:src/styles"
   },
   "dependencies": {
     "@fontsource-variable/comfortaa": "^5.2.6",
