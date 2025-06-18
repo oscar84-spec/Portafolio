@@ -1,0 +1,139 @@
+@use "../theme/variables";
+
+.card {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  opacity: 0;
+  transform: translateX(-100px);
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+
+  @keyframes show {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 300px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0; // top: 0; bottom: 0; left: 0; right: 0;
+    background: rgba(0, 0, 0, 0.5); // o usa linear-gradient si quieres
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1; // asegúrate de que esté encima de la imagen pero debajo del contenido
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &:hover {
+    .card__container-info--show {
+      transform: translateY(-150px);
+      background-image: linear-gradient(
+        45deg,
+        rgb(132 94 240/ 0.7),
+        rgb(0 0 0/ 1)
+      );
+      transition: all 0.3s ease-in-out;
+
+      position: relative;
+      z-index: 5;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__container-info {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(
+      45deg,
+      rgb(132 94 240/ 0.7),
+      rgb(0 0 0/ 0.5)
+    );
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(-70px);
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__container-title {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__title {
+    font-size: 1rem;
+    color: variables.$text-title;
+  }
+
+  &__description {
+    font-size: 0.75rem;
+    color: variables.$text-normal;
+  }
+
+  &__nota {
+    font-size: 0.6rem;
+    color: rgb(240, 183, 61);
+  }
+
+  &__container-buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 0.8rem;
+    width: 100px;
+    height: 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--demo {
+      color: variables.$btn-primary-text;
+      background-color: variables.$btn-primary;
+
+      &:hover {
+        background-color: variables.$btn-primary-hover;
+      }
+    }
+
+    &--more {
+      color: variables.$btn-secondary-text;
+      background-color: variables.$btn-secondary;
+
+      &:hover {
+        background-color: variables.$btn-secondary-hover;
+      }
+    }
+  }
+}

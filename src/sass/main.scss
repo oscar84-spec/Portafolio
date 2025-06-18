@@ -5,3 +5,6 @@
 @use "./layout/logo";
 @use "./layout/navbar";
 @use "./layout/hero/hero-content";
+
+@use "./layout/project/project.scss";
+@use "./layout/card";

@@ -1,0 +1,12 @@
+---
+import { BracketIcon } from "../assets/icons";
+import { projects } from "../mockData/project";
+import { Card } from "./index";
+---
+
+<section class="project" id="proyectos">
+  <h2 class="project__title"><BracketIcon /> Proyectos</h2>
+  <div class="project__container-card">
+    {projects.map((project) => <Card project={project} />)}
+  </div>
+</section>

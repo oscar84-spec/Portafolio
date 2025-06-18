@@ -4,3 +4,5 @@ export { default as Logo } from "./Logo.astro";
 export { default as Navbar } from "./Navbar.astro";
 export { default as MenuIcon } from "./MenuIcon.astro";
 export { default as Badge } from "./Badge.astro";
+export { default as Projects } from "./Projects.astro";
+export { default as Card } from "./Card.astro";

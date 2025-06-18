@@ -6,3 +6,4 @@ export { default as CSSIcon } from "./CSSIcon.astro";
 export { default as JSIcon } from "./JSIcon.astro";
 export { default as ReactIcon } from "./ReactIcon.astro";
 export { default as TailwindIcon } from "./TailwindIcon.astro";
+export { default as BracketIcon } from "./BracketIcon.astro";

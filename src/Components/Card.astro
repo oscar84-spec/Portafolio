@@ -1,0 +1,39 @@
+---
+import type { Project } from "../mockData/project";
+
+type Props = {
+  project: Project;
+};
+const { project } = Astro.props;
+const { title, imgPath, description, demoLink, more, nota } = project;
+---
+
+<div class="card">
+  <img
+    src={imgPath}
+    alt=`Foto del proyecto${title}`
+    class="card__img"
+    loading="lazy"
+  />
+  <div class="card__container-info card__container-info--show">
+    <div class="card__container-title">
+      <h3 class="card__title">{title}</h3>
+      <p class="card__description">{description}</p>
+      <span class="card__nota">{nota}</span>
+    </div>
+    <div class="card__container-buttons">
+      <a
+        href={demoLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="card__link card__link--demo">Demo</a
+      >
+      <a
+        href={more}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="card__link card__link--more">Ver más</a
+      >
+    </div>
+  </div>
+</div>
