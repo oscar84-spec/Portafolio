@@ -1,0 +1,60 @@
+<div class="tools__slider">
+  <div class="tools__slide-track"></div>
+</div>
+<script is:inline type="module">
+  const carruselData = [
+    {
+      name: "Html",
+      src: "./src/assets/logos/html5.svg",
+    },
+    {
+      name: "Css",
+      src: "./src/assets/logos/css_old.svg",
+    },
+    {
+      name: "JavaScript",
+      src: "./src/assets/logos/javascript.svg",
+    },
+    {
+      name: "React",
+      src: "./src/assets/logos/react_light.svg",
+    },
+    {
+      name: "TailwindCSS",
+      src: "./src/assets/logos/tailwindcss.svg",
+    },
+    {
+      name: "ExpressJS",
+      src: "./src/assets/logos/expressjs_dark.svg",
+    },
+    {
+      name: "Git",
+      src: "./src/assets/logos/git.svg",
+    },
+    {
+      name: "Php",
+      src: "./src/assets/logos/php_dark.svg",
+    },
+    {
+      name: "NodeJS",
+      src: "./src/assets/logos/nodejs.svg",
+    },
+  ];
+
+  const slideTrack = document.querySelector(".tools__slide-track");
+
+  console.log(slideTrack);
+
+  const slideTemplate = (data) => `
+    <div class="tools__slide">
+      <span class="tools__tag">${data.name}</span>
+        <img src="${data.src}" alt="${data.name}" class="tools__logo" />
+    </div>
+`;
+
+  const carruselCards = [...carruselData, ...carruselData]
+    .map((data) => slideTemplate(data))
+    .join("");
+
+  slideTrack.insertAdjacentHTML("beforeend", carruselCards);
+</script>

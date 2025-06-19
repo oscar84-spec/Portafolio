@@ -1,0 +1,60 @@
+<div class="slider-tools">
+  <div class="slider-tools__slide-track"></div>
+</div>
+<script is:inline type="module">
+  const carruselData = [
+    {
+      name: "Bash",
+      src: "./src/assets/logos/bash_dark.svg",
+    },
+    {
+      name: "Figma",
+      src: "./src/assets/logos/figma.svg",
+    },
+    {
+      name: "Github",
+      src: "./src/assets/logos/github_dark.svg",
+    },
+    {
+      name: "VSCode",
+      src: "./src/assets/logos/vscode.svg",
+    },
+    {
+      name: "Ubuntu",
+      src: "./src/assets/logos/Ubuntu.svg",
+    },
+    {
+      name: "v0",
+      src: "./src/assets/logos/v0_dark.svg",
+    },
+    {
+      name: "Slack",
+      src: "./src/assets/logos/slack.svg",
+    },
+    {
+      name: "Vercel",
+      src: "./src/assets/logos/vercel_dark.svg",
+    },
+    {
+      name: "PowerShell",
+      src: "./src/assets/logos/powershell.svg",
+    },
+  ];
+
+  const slideTrack = document.querySelector(".slider-tools__slide-track");
+
+  console.log(slideTrack);
+
+  const slideTemplate = (data) => `
+    <div class="slider-tools__slide">
+      <span class="slider-tools__tag">${data.name}</span>
+        <img src="${data.src}" alt="${data.name}" class="slider-tools__logo" />
+    </div>
+`;
+
+  const carruselCards = [...carruselData, ...carruselData]
+    .map((data) => slideTemplate(data))
+    .join("");
+
+  slideTrack.insertAdjacentHTML("beforeend", carruselCards);
+</script>

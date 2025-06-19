@@ -6,3 +6,6 @@ export { default as MenuIcon } from "./MenuIcon.astro";
 export { default as Badge } from "./Badge.astro";
 export { default as Projects } from "./Projects.astro";
 export { default as Card } from "./Card.astro";
+export { default as Skills } from "./Skills.astro";
+export { default as SliderAbilities } from "./Slider.astro";
+export { default as SliderTools } from "./SliderTools.astro";
