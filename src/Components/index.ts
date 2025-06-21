@@ -10,3 +10,4 @@ export { default as Skills } from "./Skills.astro";
 export { default as SliderAbilities } from "./Slider.astro";
 export { default as SliderTools } from "./SliderTools.astro";
 export { default as AboutMe } from "./AboutMe.astro";
+export { default as Footer } from "./Footer.astro";

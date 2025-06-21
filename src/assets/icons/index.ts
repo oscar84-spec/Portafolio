@@ -8,3 +8,5 @@ export { default as ReactIcon } from "./ReactIcon.astro";
 export { default as TailwindIcon } from "./TailwindIcon.astro";
 export { default as BracketIcon } from "./BracketIcon.astro";
 export { default as UserIcon } from "./UserIcon.astro";
+export { default as EmailIcon } from "./EmailIcon.astro";
+export { default as WhatsappIcon } from "./WhatsappIcon.astro";
