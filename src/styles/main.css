@@ -1045,4 +1045,118 @@ input:checked + .hero__label-menu .hero__svg-icon .line-top-bottom {
   color: #f5f3ff;
 }
 
+.bg-effect--project {
+  position: fixed;
+}
+
+.content {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .content {
+    padding: 50px 40px;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content {
+    padding: 50px 176px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .content {
+    padding: 50px 208px;
+  }
+}
+.content__img-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: max-content;
+  float: right;
+}
+@media screen and (min-width: 768px) {
+  .content__img-container {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content__img-container {
+    width: 400px;
+  }
+}
+.content__link-back {
+  text-decoration: none;
+  color: white;
+}
+.content__img {
+  border-radius: 8px;
+}
+@media screen and (min-width: 768px) {
+  .content__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.content__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .content__info {
+    width: 50%;
+  }
+}
+.content__title {
+  color: #f5f3ff;
+  font-size: 1.5rem;
+}
+.content__badge-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.content__badge {
+  font-size: 0.75rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #1e1b4b;
+  color: #a78bfa;
+  pointer-events: none;
+}
+.content__description {
+  color: #d1d5db;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.content__description h3 {
+  margin-top: 15px;
+}
+.content__nota {
+  font-size: 0.75rem;
+  color: rgb(180, 140, 64);
+}
+.content__link {
+  width: max-content;
+  text-decoration: none;
+  color: #f5f3ff;
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: #1f2937;
+  color: #e5e7eb;
+  transition: all 0.3s ease-in-out;
+}
+.content__link:hover {
+  background-color: #374151;
+}
+
 /*# sourceMappingURL=main.css.map */

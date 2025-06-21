@@ -1,7 +1,9 @@
 ---
 import { BracketIcon } from "../assets/icons";
-import { projects } from "../mockData/project";
 import { Card } from "./index";
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("proyectos");
 ---
 
 <section class="project" id="proyectos">

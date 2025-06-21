@@ -1,0 +1,120 @@
+@use "../../theme/variables";
+
+.bg-effect--project {
+  position: fixed;
+}
+
+.content {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    padding: 50px 40px;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 50px 176px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 50px 208px;
+  }
+
+  &__img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: max-content;
+    float: right;
+
+    @media screen and (min-width: 768px) {
+      width: 300px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 400px;
+    }
+  }
+
+  &__link-back {
+    text-decoration: none;
+    color: white;
+  }
+
+  &__img {
+    border-radius: 8px;
+
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+  }
+
+  &__title {
+    color: variables.$text-title;
+    font-size: 1.5rem;
+  }
+
+  &__badge-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  &__badge {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: variables.$badge;
+    color: variables.$badge-text;
+    pointer-events: none;
+  }
+
+  &__description {
+    color: variables.$text-normal;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h3 {
+      margin-top: 15px;
+    }
+  }
+
+  &__nota {
+    font-size: 0.75rem;
+    color: rgb(180, 140, 64);
+  }
+
+  &__link {
+    width: max-content;
+    text-decoration: none;
+    color: variables.$text-title;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: variables.$btn-secondary;
+    color: variables.$btn-secondary-text;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: variables.$btn-secondary-hover;
+    }
+  }
+}

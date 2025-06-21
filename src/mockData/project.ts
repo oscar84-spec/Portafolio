@@ -3,7 +3,6 @@ export type Project = {
   imgPath: string;
   description: string;
   demoLink: string;
-  more: string;
   nota: string;
 };
 
@@ -13,7 +12,7 @@ export const projects: Project[] = [
     imgPath: "/projects/ecommerce.webp",
     description: "Un Ecommerce hecho con React y Express",
     demoLink: "https://ecommerce-seven-beige-79.vercel.app/",
-    more: "",
+
     nota: "",
   },
   {
@@ -21,7 +20,7 @@ export const projects: Project[] = [
     imgPath: "/projects/countryflags.webp",
     description: "Una aplicación de paises hecho con React",
     demoLink: "https://countries-flags-five.vercel.app/",
-    more: "",
+
     nota: "",
   },
   {
@@ -29,7 +28,7 @@ export const projects: Project[] = [
     imgPath: "/projects/taskflow.webp",
     description: "Un clon de trello hecho con React, Tailwind y Express",
     demoLink: "https://clone-trello-ten.vercel.app/",
-    more: "",
+
     nota: "La API de este proyecto tiene cold start de entre 15 y 40 segundos, así que puede tardar un poco en cargarse",
   },
 ];

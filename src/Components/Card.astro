@@ -1,11 +1,7 @@
 ---
-import type { Project } from "../mockData/project";
-
-type Props = {
-  project: Project;
-};
 const { project } = Astro.props;
-const { title, imgPath, description, demoLink, more, nota } = project;
+const { title, imgPath, description, demoLink, nota } = project.data;
+const { slug } = project;
 ---
 
 <div class="card">
@@ -28,11 +24,8 @@ const { title, imgPath, description, demoLink, more, nota } = project;
         rel="noopener noreferrer"
         class="card__link card__link--demo">Demo</a
       >
-      <a
-        href={more}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="card__link card__link--more">Ver más</a
+      <a href=`/proyectos/${slug}` class="card__link card__link--more"
+        >Ver más</a
       >
     </div>
   </div>

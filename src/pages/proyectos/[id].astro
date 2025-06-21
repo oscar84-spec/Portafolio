@@ -1,0 +1,45 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../Layout/Layout.astro";
+
+export async function getStaticPaths() {
+  const projects = await getCollection("proyectos");
+  return projects.map((project) => ({
+    params: { id: project.slug },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { data, slug } = project;
+const { title, imgPath, demoLink, nota, tech } = data;
+const { Content } = await project.render();
+---
+
+<Layout>
+  <main>
+    <div class="bg-effect bg-effect--project"></div>
+    <section class="content">
+      <div class="content__img-container">
+        <a href="/" class="content__link-back"> &larr; Volver atrás</a>
+        <img
+          src={imgPath}
+          alt=`Foto del proyecto ${title}`
+          class="content__img"
+          loading="lazy"
+        />
+      </div>
+      <div class="content__info">
+        <h2 class="content__title">{title}</h2>
+        <div class="content__badge-container">
+          {tech.map((tech) => <span class="content__badge">{tech}</span>)}
+        </div>
+        <article class="content__description">
+          <Content />
+        </article>
+        <span class="content__nota">{nota}</span>
+        <a href={demoLink} target="_blank" class="content__link">Demo</a>
+      </div>
+    </section>
+  </main>
+</Layout>
