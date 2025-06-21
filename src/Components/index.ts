@@ -9,3 +9,4 @@ export { default as Card } from "./Card.astro";
 export { default as Skills } from "./Skills.astro";
 export { default as SliderAbilities } from "./Slider.astro";
 export { default as SliderTools } from "./SliderTools.astro";
+export { default as AboutMe } from "./AboutMe.astro";
