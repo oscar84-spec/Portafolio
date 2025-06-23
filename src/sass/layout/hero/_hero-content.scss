@@ -141,7 +141,6 @@
 .hero__container-img {
   width: 100%;
   height: 250px;
-  border: red solid;
   position: relative;
 
   @media screen and (min-width: 768px) {
@@ -156,6 +155,7 @@
   top: 0;
   left: 0;
   object-fit: cover;
+  mask-image: linear-gradient(black 50%, transparent);
 }
 
 .hero__icons-stack {
@@ -164,7 +164,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  border: blue solid;
 }
 
 .hero__stack-icon {
